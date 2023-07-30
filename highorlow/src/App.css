@@ -18,8 +18,7 @@
 
   min-height: 10vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  
   font-size: calc(10px + 2vmin);
   color: Black;
   border: 10px solid pink;
@@ -29,6 +28,7 @@
 }
 .App-header h1{
   color: 	#28282B;
+  margin-left: 20px;
   
 }
 
@@ -122,7 +122,11 @@ button:active{
 }
 
 
-
+h3{
+  color: black;
+  margin-left: 50%;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

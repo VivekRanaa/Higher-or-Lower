@@ -7,6 +7,9 @@ const API_KEY = 'rr2z0CSANtKoa1DrHFBVyb69TwJWHR_4fDufb31TfFI';
 export async function fetchImageByKeyword(keyword) {
   try {
     const response = await axios.get('https://api.unsplash.com/search/photos', {
+      headers: {
+        'Cache-Control':'no-cache'
+      },
       params: {
         query: keyword,
         client_id: API_KEY,
